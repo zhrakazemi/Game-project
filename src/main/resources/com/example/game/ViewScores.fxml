@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game.ViewScoresController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="574.0" layoutX="12.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="376.0" />
+      <Label layoutX="147.0" layoutY="41.0" prefHeight="42.0" prefWidth="136.0" text="Money Table">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="200.0" layoutY="97.0" startX="-100.0" />
+      <ListView fx:id="lvScores" layoutX="55.0" layoutY="136.0" prefHeight="391.0" prefWidth="286.0" />
+   </children>
+</AnchorPane>
