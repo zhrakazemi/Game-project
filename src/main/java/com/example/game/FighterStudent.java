@@ -11,8 +11,8 @@ public class FighterStudent extends Hero {
     public FighterStudent(int x  , int y)  {
         super(100, 5, 100, 150 , x , y);
         Image image=new Image(HelloApplication.class.getResourceAsStream("FighterStudent.png"));
-        this.setFitHeight(180);
-        this.setFitWidth(260);
+        this.setFitHeight(100);
+        this.setFitWidth(70);
         this.setImage(image);
     }
     public FighterStudent copy(){
@@ -20,5 +20,10 @@ public class FighterStudent extends Hero {
                 (int)getTranslateX(),
                 (int)getTranslateY()
         );
+    }
+
+
+    public int getHealth() {
+        return health;
     }
 }

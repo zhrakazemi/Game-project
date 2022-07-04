@@ -3,13 +3,18 @@ package com.example.game;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-public class Master extends ImageView {
-    public Master() {
+public class Master extends Hero {
+    public Master(int x , int y) {
+        super(150 , 10 , 600 , 0, x , y);
         Image image=new Image(HelloApplication.class.getResourceAsStream("Master.png"));
-        this.setFitHeight(180);
-        this.setFitWidth(260);
+        this.setFitHeight(100);
+        this.setFitWidth(70);
         this.setImage(image);
-        this.setVisible(false);
-
+    }
+    public Master copy(){
+        return new Master(
+                (int)getTranslateX(),
+                (int)getTranslateY()
+        );
     }
 }
