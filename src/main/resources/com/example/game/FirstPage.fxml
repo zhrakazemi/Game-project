@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game.FirstPageController">
+   <children>
+      <ImageView fitHeight="458.0" fitWidth="980.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@2204_w026_n002_1717b_p1_1717.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="284.0" layoutY="65.0" prefHeight="102.0" prefWidth="462.0" text="TA`s VS Student`s" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="72.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnExit" layoutX="185.0" layoutY="289.0" mnemonicParsing="false" onAction="#pressOnBtnExit" prefHeight="83.0" prefWidth="154.0" style="-fx-background-radius: 40;" text="Exit">
+         <font>
+            <Font name="Juice ITC" size="41.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnResume" layoutX="413.0" layoutY="289.0" mnemonicParsing="false" onAction="#pressOnBtnResume" prefHeight="80.0" prefWidth="154.0" style="-fx-background-radius: 40;" text="score table">
+         <font>
+            <Font name="Juice ITC" size="43.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnStart" contentDisplay="CENTER" layoutX="669.0" layoutY="288.0" mnemonicParsing="false" onAction="#pressOnBtnStart" prefHeight="83.0" prefWidth="154.0" style="-fx-background-radius: 40;" text="Start">
+         <font>
+            <Font name="Juice ITC" size="42.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
